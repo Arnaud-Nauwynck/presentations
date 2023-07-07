@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<script>
+		console.log("script test-js2..");
+
+
+		var obj = { x: 1 };
+		console.log(obj);
+
+		console.log("adding (numeric) field to object");
+		obj.y = 2;
+		console.log(obj);
+
+		console.log("declare function : var funcPlus = function(a,b) { return a+b; }");
+		var funcPlus = function(a, b) {
+			console.log("calling function funcPlus..", this, a, b);
+			return a + b;
+		};
+		console.log("funcPlus", funcPlus);
+
+		console.log("calling function funcPlus(1, 2)... check log this: 'Window' ... ");
+		var res1 = funcPlus(1, 2);
+		console.log("calling function funcPlus(1, 2)", res1);
+		console.log("checking 'this'", this);
+
+		var res2 = funcPlus(1, 2, 3);
+		console.log("calling function with too many args =>", res2);
+
+		var res3 = funcPlus(1);
+		console.log("calling function with too few args =>", res3);
+
+		var res4 = funcPlus(null, "");
+		console.log("calling function with bad args =>", res4);
+
+		console.log("declare function 'lambdaPlus', as lambda  a,b=> a+b");
+		var lambdaPlus = (a, b) => {
+			console.log("calling lambdaPlus..", this, a, b);
+			return a + b;
+		};
+		console.log("lambdaPlus", lambdaPlus);
+
+		console.log("declare function 'thisXPlusFunc' using 'this'.. ");
+		var thisXPlusFunc = function(incr) {
+			var res = this.x + incr;
+			console.log("calling thisXPlusFunc.. this,incr,res", this, incr, res);
+			return res;
+		};
+		console.log("adding (function) field to object: obj.meth1 = thisXPlusFunc");
+		obj.meth1 = thisXPlusFunc;
+		console.log(obj);
+
+		console.log("calling function on object: obj.meth1(3)");
+		var res5 = obj.meth1(3)
+		console.log("obj.meth1(3) => ", res5);
+
+		var obj2 = { x: 42 };
+		var bindThisXPlusFunc = thisXPlusFunc.bind(obj2);
+		console.log("bindThisXPlusFunc = thisXPlusFunc.bind(obj2)", bindThisXPlusFunc);
+		console.log(bindThisXPlusFunc);
+
+		console.log("thisXPlusFunc(1) => ", bindThisXPlusFunc(1));
+		obj2.x = 10;
+		console.log("obj2.x = 10; thisXPlusFunc(1) => ", bindThisXPlusFunc(1));
+
+		var obj3 = { x: 1000, meth1: bindThisXPlusFunc };
+		console.log("assign to any other object... call bound function (as obj.meth1):  obj3 = { x: 0, meth1: bindThisXPlusFunc }; obj3.meth1(1) => ", obj3.meth1(1));
+
+		console.log("calling with apply: thisXPlusFunc.apply(obj3, [1]) => ", thisXPlusFunc.apply(obj3, [1]));
+
+		var obj4 = { x: 100 };
+		console.log("calling with apply: bindThisXPlusFunc.apply(obj4, [1]) => ");
+		console.log(bindThisXPlusFunc.apply(obj4, [1]));
+
+		console.log("calling with apply: bindThisXPlusFunc.apply(null, [1]) => ");
+		console.log(bindThisXPlusFunc.apply(null, [1]));
+
+
+		console.log("https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/prototype");
+		console.log("function Ctor() {}");
+		function Ctor() {}
+		console.log("Ctor", Ctor);
+
+		console.log("const inst = new Ctor();");
+		const inst = new Ctor();
+		console.log("inst", inst);
+
+		console.log("Object.getPrototypeOf(inst) === Ctor.prototype"); // true
+		console.log(Object.getPrototypeOf(inst) === Ctor.prototype); // true
+
+
+	</script>
+</head>
+<body>
+Test javascript
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function
+
+</body>
+</html>
