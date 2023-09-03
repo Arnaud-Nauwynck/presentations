@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dynamic List Example</title>
+</head>
+<body>
+<!-- Ajouter un champ de texte, un bouton, et une liste -->
+<input type="text" id="input" placeholder="Enter text">
+<button id="addButton">Add to List</button>
+<ul id="list"></ul>
+
+<script>
+    // Fonction pour ajouter un élément à la liste
+    function addItemToList() {
+        // Utiliser JavaScript pour sélectionner l'élément d'entrée de texte et la liste par leur ID
+        var inputElement = document.getElementById("input");
+        var listElement = document.getElementById("list");
+
+        // Obtenir la valeur du champ de texte
+        var inputValue = inputElement.value;
+
+        // Créer un nouvel élément de liste (li) et y ajouter le contenu du champ de texte
+        var listItem = document.createElement("li");
+        listItem.textContent = inputValue;
+
+        // Ajouter l'élément de liste à la liste existante
+        listElement.appendChild(listItem);
+
+        // Effacer le contenu du champ de texte après l'ajout
+        inputElement.value = "";
+    }
+
+    // Sélectionner le bouton par son ID
+    var addButton = document.getElementById("addButton");
+
+    // Ajouter un gestionnaire d'événements pour le clic sur le bouton
+    addButton.addEventListener("click", addItemToList);
+</script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Real-Time Text Display</title>
+</head>
+<body>
+<!-- Ajouter un champ de texte et un paragraphe -->
+<input type="text" id="textInput" placeholder="Enter text">
+<p id="displayText"></p>
+
+<script>
+    // Sélectionner le champ de texte et le paragraphe par leur ID
+    var textInput = document.getElementById("textInput");
+    var displayText = document.getElementById("displayText");
+
+    // Ajouter un gestionnaire d'événements pour le changement de texte dans le champ
+    textInput.addEventListener("input", function() {
+        // Récupérer la valeur du champ de texte en temps réel
+        var enteredText = textInput.value;
+
+        // Mettre à jour le contenu du paragraphe pour afficher le texte en temps réel
+        displayText.textContent = enteredText;
+    });
+</script>
+</body>
+</html>

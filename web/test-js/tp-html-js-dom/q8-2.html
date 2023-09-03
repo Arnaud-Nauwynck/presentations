@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Real-Time List</title>
+</head>
+<body>
+<!-- Ajouter un champ de texte et une liste -->
+<input type="text" id="textInput" placeholder="Enter text">
+<ul id="list"></ul>
+
+<script>
+    // Sélectionner le champ de texte et la liste par leur ID
+    var textInput = document.getElementById("textInput");
+    var list = document.getElementById("list");
+
+    // Gestionnaire d'événements pour le champ de texte
+    textInput.addEventListener("keydown", function(event) {
+        if (event.key === "Enter") { // Si la touche 'Enter' est pressée
+            // Récupérer le texte du champ de texte
+            var enteredText = textInput.value;
+
+            // Créer un nouvel élément de liste (li) avec le texte saisi
+            var listItem = document.createElement("li");
+            listItem.textContent = enteredText;
+
+            // Ajouter l'élément de liste à la liste existante
+            list.appendChild(listItem);
+
+            // Effacer le contenu du champ de texte
+            textInput.value = "";
+
+            // Empêcher le comportement par défaut de la touche 'Enter' (ne pas soumettre le formulaire)
+            event.preventDefault();
+        }
+    });
+
+    // Gestionnaire d'événements pour le champ de texte lorsque le focus est perdu
+    textInput.addEventListener("blur", function() {
+        // Récupérer le texte du champ de texte
+        var enteredText = textInput.value;
+
+        // Créer un nouvel élément de liste (li) avec le texte saisi
+        var listItem = document.createElement("li");
+        listItem.textContent = enteredText;
+
+        // Ajouter l'élément de liste à la liste existante
+        list.appendChild(listItem);
+
+        // Effacer le contenu du champ de texte
+        textInput.value = "";
+    });
+</script>
+</body>
+</html>

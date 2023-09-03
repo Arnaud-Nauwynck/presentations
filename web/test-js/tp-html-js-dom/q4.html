@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Date Display Example</title>
+</head>
+<body>
+<!-- Add a paragraph with a unique identifier -->
+<p id="dateText">Placeholder Text</p>
+
+<script>
+    // Function to update the date and time
+    function updateDate() {
+        // Use JavaScript to select the element by its ID
+        var dateElement = document.getElementById("dateText");
+
+        // Get the current date and time
+        var currentDate = new Date();
+
+        // Format the date as "yyyy/mm/dd hh:mm:ss"
+        var formattedDate = currentDate.getFullYear() + "/" + (currentDate.getMonth() + 1) + "/" + currentDate.getDate() + " " + currentDate.getHours() + ":" + currentDate.getMinutes() + ":" + currentDate.getSeconds();
+
+        // Update the content of the element to display the formatted date
+        dateElement.textContent = formattedDate;
+    }
+
+    // Update the date initially
+    updateDate();
+
+    // Update the date every 5 seconds using setInterval
+    setInterval(updateDate, 5000); // 5000 milliseconds (5 seconds)
+</script>
+</body>
+</html>

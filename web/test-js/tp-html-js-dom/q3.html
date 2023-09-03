@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Date Display Example</title>
+</head>
+<body>
+<!-- Ajouter un paragraphe avec un identifiant unique -->
+<p id="dateText">Placeholder Text</p>
+
+<script>
+    // Utiliser JavaScript pour sélectionner l'élément par son ID
+    var dateElement = document.getElementById("dateText");
+
+    // Obtenir la date actuelle
+    var currentDate = new Date();
+
+    // Formater la date au format "yyyy/mm/dd hh:mm:ss"
+    var formattedDate = currentDate.getFullYear() + "/" + (currentDate.getMonth() + 1) + "/" + currentDate.getDate() + " " + currentDate.getHours() + ":" + currentDate.getMinutes() + ":" + currentDate.getSeconds();
+
+    // Modifier le contenu de l'élément pour afficher la date formatée
+    dateElement.textContent = formattedDate;
+</script>
+</body>
+</html>

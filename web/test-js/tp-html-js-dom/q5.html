@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Button Click Example</title>
+</head>
+<body>
+<!-- Ajouter un bouton et un paragraphe avec un identifiant unique -->
+<button id="clickButton">Click Me</button>
+<p id="lastClick">Click the button to see the last click time.</p>
+
+<script>
+    // Fonction pour mettre à jour le paragraphe avec l'heure du dernier clic
+    function updateLastClickTime() {
+        // Utiliser JavaScript pour sélectionner l'élément par son ID
+        var lastClickElement = document.getElementById("lastClick");
+
+        // Obtenir la date et l'heure actuelles
+        var currentDate = new Date();
+
+        // Formater la date au format "yyyy/mm/dd hh:mm:ss"
+        var formattedDate = currentDate.getFullYear() + "/" + (currentDate.getMonth() + 1) + "/" + currentDate.getDate() + " " + currentDate.getHours() + ":" + currentDate.getMinutes() + ":" + currentDate.getSeconds();
+
+        // Mettre à jour le contenu de l'élément pour afficher le message
+        lastClickElement.textContent = "The button was last clicked at date: " + formattedDate + "!";
+    }
+
+    // Sélectionner le bouton par son ID
+    var clickButton = document.getElementById("clickButton");
+
+    // Ajouter un gestionnaire d'événements pour le clic sur le bouton
+    clickButton.addEventListener("click", updateLastClickTime);
+</script>
+</body>
+</html>
