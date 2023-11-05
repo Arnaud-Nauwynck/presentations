@@ -8,6 +8,14 @@
 <p id="dateText">Placeholder Text</p>
 
 <script>
+    function updateDate1() {
+		updateDate2();
+	}
+
+    function updateDate2() {
+		updateDate();
+	}
+
     // Function to update the date and time
     function updateDate() {
         // Use JavaScript to select the element by its ID
@@ -26,8 +34,8 @@
     // Update the date initially
     updateDate();
 
-    // Update the date every 5 seconds using setInterval
-    setInterval(updateDate, 5000); // 5000 milliseconds (5 seconds)
+    // Update the date every 1 seconds using setInterval
+    setInterval(updateDate1, 1000);
 </script>
 </body>
 </html>
