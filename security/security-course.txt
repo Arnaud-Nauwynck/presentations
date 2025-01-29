@@ -1,0 +1,37 @@
+Course name
+LectureriProfessor
+Duration
+Course key objective
+Theory and Practice of Security and Privacy
+
+-_ Understand the most important classes of information security/privacy risks in today’s "BigData" environment
+-
+Content
+-------------------
+Exercise a basic, critical set of "best practices" for handling sensitive information
+Exercise competent operational security practices in their home and professional lives
+Understand at overview level the key technical tools available for security/privacy
+protection
+Understand the key technical tools available for security/privacy protection
+Exercise competent operational securit
+ractices
+Overview of cyberthreats
+Exploiting vulnerabilities
+Authentication, access control, compartmentalization
+Basic applied cryptography
+Operational security practices and failures
+Machine leaming and privacy
+- _ Data anonymization and de-anonymization techniques
+Privacy enhancing technologies
+-
+Teaching methods and tools
+Evaluation
+Bibliography
+Course name
+Lecturer/Professor
+Duration.
+Lecture, readings, projects
+50% Project/50% Final exam
+ISO.IEC 27001 framework
+GPDR https://gdpr.ew/
+
