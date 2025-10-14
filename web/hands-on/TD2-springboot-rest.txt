@@ -1,0 +1,36 @@
+Similar to TD2 on nodeJs + Express ... 
+redo using Java - SpringBoot
+
+
+1/ use spring.starter.io to generate your app
+
+	add dependency "web"
+	use simple options: Maven + java   (not graddle/kotlin)
+
+2/ import your project into IntelliJ
+
+3/ run your server main class
+
+4/ test with your web browser
+	http://localhost:8080/
+	
+5/ add a static web page,
+		in src/main/resources/static/index.html
+
+6/ restart your server
+
+7/ add a @RestController class, with several endpoint methods for 
+
+		http GET /api/todo
+			=> return a list of Todo objects as json
+		http POST /api/todo
+			=> accept a payload request Body as json
+		http GET /api/todo/{id}
+			=> find an element by id
+		http PUT /api/todo
+			=> update an element (by id=)
+		http DELETE /api/todo/{id}
+			=> delete an element by id
+		..
+		
+			
