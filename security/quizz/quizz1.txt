@@ -1,0 +1,160 @@
+MC  
+What does the HTTP status code 200 indicate?  
+~ The request was successful  
+@ The request was redirected  
+@ The server encountered an error  
+@ The request was unauthorized  
+
+MC  
+Which HTTP status code is used when a resource is not found?  
+~ 404 Not Found  
+@ 403 Forbidden  
+@ 500 Internal Server Error  
+@ 301 Moved Permanently  
+
+MC  
+What does the HTTP 403 status code indicate?  
+~ The client is forbidden from accessing the resource  
+@ The server cannot find the resource  
+@ The request is missing authentication  
+@ The server encountered an internal error  
+
+MC  
+Which HTTP status code indicates that a request requires authentication?  
+~ 401 Unauthorized  
+@ 400 Bad Request  
+@ 500 Internal Server Error  
+@ 200 OK  
+
+MC  
+What does the HTTP status code 500 represent?  
+~ A generic server error  
+@ A client-side syntax error  
+@ A redirection  
+@ A successful request  
+
+MC  
+Which status code indicates a permanent redirect?  
+~ 301 Moved Permanently  
+@ 302 Found  
+@ 307 Temporary Redirect  
+@ 400 Bad Request  
+
+MC  
+Which HTTP status code is returned when a request is malformed or incorrect?  
+~ 400 Bad Request  
+@ 401 Unauthorized  
+@ 408 Request Timeout  
+@ 500 Internal Server Error  
+
+MC  
+What does the HTTP status code 302 indicate?  
+~ A temporary redirect  
+@ A permanent redirect  
+@ A client error  
+@ A successful request  
+
+MC  
+What does HTTPS provide that HTTP does not?  
+~ Encryption and data integrity  
+@ Faster page loading  
+@ A way to store cookies  
+@ A new programming language  
+
+MC  
+Which HTTP method is commonly used for submitting form data?  
+@ GET  
+~ POST  
+@ DELETE  
+@ HEAD  
+
+MC  
+Which of the following is a common security vulnerability in web applications?  
+~ Cross-Site Scripting (XSS)  
+@ Load Balancing  
+@ DNS Caching  
+@ Server-side Rendering  
+
+MC  
+What is the main purpose of the Same-Origin Policy?  
+~ To prevent malicious scripts from accessing content across different origins  
+@ To improve website loading speed  
+@ To encrypt HTTP traffic  
+@ To store user credentials securely  
+
+MC  
+How can an application mitigate Cross-Site Request Forgery (CSRF)?  
+~ Using CSRF tokens in requests  
+@ Disabling JavaScript  
+@ Enforcing HTTPS only  
+@ Using client-side authentication  
+
+MC  
+What is the purpose of HTTP Strict Transport Security?  
+~ To force browsers to only use HTTPS connections  
+@ To block all JavaScript execution  
+@ To prevent SQL Injection  
+@ To enable caching on the server
+
+MC  
+What is the primary purpose of HTTP cookies?  
+~ To store user-related data on the client side  
+@ To increase website performance  
+@ To encrypt network traffic  
+@ To compress HTTP responses  
+
+MC  
+Which HTTP header is used to send cookies from the server to the client?  
+~ Set-Cookie  
+@ Cookie  
+@ Authorization  
+@ Cache-Control  
+
+MC  
+Which of the following flags makes a cookie accessible only via HTTP requests and not JavaScript?  
+~ HttpOnly  
+@ Secure  
+@ SameSite  
+@ Max-Age  
+
+MC  
+Which cookie attribute ensures that a cookie is only sent over secure HTTPS connections?  
+~ Secure  
+@ HttpOnly  
+@ Domain  
+@ Path  
+
+MC  
+What does the SameSite attribute in cookies help prevent?  
+~ Cross-Site Request Forgery (CSRF) attacks  
+@ SQL Injection attacks  
+@ Man-in-the-Middle (MITM) attacks  
+@ Server overload  
+
+MC  
+Which of the following is a potential security risk of cookies?  
+~ Session hijacking  
+@ Faster website loading  
+@ Reduced network traffic  
+@ Improved caching  
+
+MC  
+Which HTTP header is used by clients to send cookies back to the server?  
+~ Cookie  
+@ Set-Cookie  
+@ Authorization  
+@ Content-Type  
+
+MC  
+Using Cookie like JSESSIONID requires a database on the server-side ?  
+@ Yes, so it is better
+~ Yes, but it makes the server be statefull
+@ No, so it is better (server stateless)
+
+MC  
+Using JWT token requires a database on the server-side ?  
+@ Yes, so it is better 
+@ Yes, but it makes the server be statefull
+~ No, so it is better (server stateless)
+
+

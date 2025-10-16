@@ -1,0 +1,158 @@
+What does the HTTP status code 200 indicate?  
+A. The request was redirected  
+B. The server encountered an error  
+C. The request was unauthorized  
+D. The request was successful  
+ANSWER: D  
+
+Which HTTP status code is used when a resource is not found?  
+A. 403 Forbidden  
+B. 500 Internal Server Error  
+C. 301 Moved Permanently  
+D. 404 Not Found  
+ANSWER: D  
+
+What does the HTTP 403 status code indicate?  
+A. The server cannot find the resource  
+B. The request is missing authentication  
+C. The server encountered an internal error  
+D. The client is forbidden from accessing the resource  
+ANSWER: D  
+
+Which HTTP status code indicates that a request requires authentication?  
+A. 400 Bad Request  
+B. 500 Internal Server Error  
+C. 200 OK  
+D. 401 Unauthorized  
+ANSWER: D  
+
+What does the HTTP status code 500 represent?  
+A. A client-side syntax error  
+B. A redirection  
+C. A successful request  
+D. A generic server error  
+ANSWER: D  
+
+Which status code indicates a permanent redirect?  
+A. 302 Found  
+B. 307 Temporary Redirect  
+C. 400 Bad Request  
+D. 301 Moved Permanently  
+ANSWER: D  
+
+Which HTTP status code is returned when a request is malformed or incorrect?  
+A. 401 Unauthorized  
+B. 408 Request Timeout  
+C. 500 Internal Server Error  
+D. 400 Bad Request  
+ANSWER: D  
+
+What does the HTTP status code 302 indicate?  
+A. A permanent redirect  
+B. A client error  
+C. A successful request  
+D. A temporary redirect  
+ANSWER: D  
+
+What does HTTPS provide that HTTP does not?  
+A. Faster page loading  
+B. A way to store cookies  
+C. A new programming language  
+D. Encryption and data integrity  
+ANSWER: D  
+
+Which HTTP method is commonly used for submitting form data?  
+A. GET  
+B. DELETE  
+C. HEAD  
+D. POST  
+ANSWER: D  
+
+Which of the following is a common security vulnerability in web applications?  
+A. Load Balancing  
+B. DNS Caching  
+C. Server-side Rendering  
+D. Cross-Site Scripting (XSS)  
+ANSWER: D  
+
+What is the main purpose of the Same-Origin Policy?  
+A. To improve website loading speed  
+B. To encrypt HTTP traffic  
+C. To store user credentials securely  
+D. To prevent malicious scripts from accessing content across different origins  
+ANSWER: D  
+
+How can an application mitigate Cross-Site Request Forgery (CSRF)?  
+A. Disabling JavaScript  
+B. Enforcing HTTPS only  
+C. Using client-side authentication  
+D. Using CSRF tokens in requests  
+ANSWER: D  
+
+What is the purpose of HTTP Strict Transport Security?  
+A. To block all JavaScript execution  
+B. To prevent SQL Injection  
+C. To enable caching on the server  
+D. To force browsers to only use HTTPS connections  
+ANSWER: D  
+
+What is the primary purpose of HTTP cookies?  
+A. To increase website performance  
+B. To encrypt network traffic  
+C. To compress HTTP responses  
+D. To store user-related data on the client side  
+ANSWER: D  
+
+Which HTTP header is used to send cookies from the server to the client?  
+A. Cookie  
+B. Authorization  
+C. Cache-Control  
+D. Set-Cookie  
+ANSWER: D  
+
+Which of the following flags makes a cookie accessible only via HTTP requests and not JavaScript?  
+A. Secure  
+B. SameSite  
+C. Max-Age  
+D. HttpOnly  
+ANSWER: D  
+
+Which cookie attribute ensures that a cookie is only sent over secure HTTPS connections?  
+A. HttpOnly  
+B. Domain  
+C. Path  
+D. Secure  
+ANSWER: D  
+
+What does the SameSite attribute in cookies help prevent?  
+A. SQL Injection attacks  
+B. Man-in-the-Middle (MITM) attacks  
+C. Server overload  
+D. Cross-Site Request Forgery (CSRF) attacks  
+ANSWER: D  
+
+Which of the following is a potential security risk of cookies?  
+A. Faster website loading  
+B. Reduced network traffic  
+C. Improved caching  
+D. Session hijacking  
+ANSWER: D  
+
+Which HTTP header is used by clients to send cookies back to the server?  
+A. Set-Cookie  
+B. Authorization  
+C. Content-Type  
+D. Cookie  
+ANSWER: D  
+
+Using Cookie like JSESSIONID requires a database on the server-side?  
+A. Yes, so it is better  
+B. No, so it is better (server stateless)  
+C. Yes, but it makes the server be stateful  
+ANSWER: C  
+
+Using JWT token requires a database on the server-side?  
+A. Yes, so it is better  
+B. Yes, but it makes the server be stateful  
+C. No, so it is better (server stateless)  
+ANSWER: C  
